@@ -117,6 +117,8 @@ html.theme-transitioning *::after{
 }
 
 /* Prevent flash before JS loads — inline script handles this */
+
+
 /* Page-level accent overrides */
 body.theme-vermitrack{
   --accent:#4ade80;
