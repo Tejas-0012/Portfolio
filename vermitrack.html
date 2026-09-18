@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0a0a0f" />
+
+<title>VermiTrack — Smart Vermicompost Monitoring | Tejas L</title>
+<meta name="description" content="IoT vermicomposting system with live sensors and AI chatbot. Awarded at Institution of Engineers (India)." />
+
+<meta property="og:title" content="VermiTrack — Smart Vermicompost Monitoring" />
+<meta property="og:description" content="IoT system with live sensors and AI chatbot. Awarded at Institution of Engineers (India)." />
+<meta property="og:image" content="https://tejas-portfolio.vercel.app/assets/vermitrack-iei-award.jpg" />
+<meta property="og:url" content="https://tejas-portfolio.vercel.app/vermitrack.html" />
+<meta property="og:type" content="article" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="VermiTrack — Smart Vermicompost Monitoring" />
+<meta name="twitter:description" content="IoT system awarded at Institution of Engineers (India)." />
+<meta name="twitter:image" content="https://tejas-portfolio.vercel.app/assets/vermitrack-iei-award.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css" />
+</head>
+<body class="theme-vermitrack">
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="container">
+    <a class="nav-back" href="index.html">← Back to portfolio</a>
+    <div class="nav-logo">Vermi<span>Track</span></div>
+  </div>
+</nav>
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme (press T)">
+  <span class="theme-icon-dark">🌙</span>
+  <span class="theme-icon-light" style="display:none">☀️</span>
+</button>
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <div style="text-align:center;max-width:800px;margin-inline:auto">
+      <div class="hero-badge" style="margin-inline:auto">🏆 Awarded at Institution of Engineers (India)</div>
+      <h1 class="hero-title" style="margin-bottom:1rem">
+        VermiTrack<br><span class="grad">Smart Vermicompost Monitoring</span>
+      </h1>
+      <p style="max-width:640px;margin-inline:auto">
+        A full-stack IoT system that brings real-time sensing, automated control,
+        and an AI assistant to vermicomposting — built for farmers, showcased at SIH.
+      </p>
+      <div class="chip-row" style="justify-content:center;margin-top:1rem">
+        <span class="chip">🌱 IoT + Mobile</span>
+        <span class="chip">🤖 AI Chatbot</span>
+        <span class="chip">⚙️ 5 Motor Actuators</span>
+        <span class="chip">🏆 IEI Award</span>
+      </div>
+      <div class="cta-group" style="justify-content:center">
+        <a class="btn btn-primary" href="https://github.com/Tejas-0012/VermiTrack" target="_blank" rel="noopener">💻 View on GitHub</a>
+        <a class="btn btn-ghost" href="#demo">▶ Watch Demo</a>
+      </div>
+    </div>
+
+    <div class="video-wrap reveal" style="margin-top:var(--gap-xl)">
+      <div class="video-frame">
+        <img src="assets/vermi-iei-award.jpeg" alt="VermiTrack team receiving award at IEI"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      </div>
+      <div class="video-meta">
+        <span class="dot"></span>
+        <span>Receiving recognition at the Institution of Engineers (India)</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ OVERVIEW ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">01 — Overview</span>
+      <h2>Why VermiTrack exists</h2>
+    </div>
+    <p class="reveal">
+      Vermicomposting is sensitive — moisture, temperature, and worm activity need constant attention.
+      Manual monitoring is unreliable and labor-intensive.
+    </p>
+    <p class="reveal">
+      <strong>VermiTrack</strong> solves this with a real-time IoT stack: sensors stream live metrics
+      to a Flutter mobile app, which auto-controls water pumps and gate actuators. An integrated
+      <strong>AI Compost Assistant ("Digital Krushi Mitra")</strong> guides farmers in plain language —
+      no technical knowledge required.
+    </p>
+
+    <div class="highlight reveal">
+      <div class="icon">🏆</div>
+      <div>
+        <h3>Recognized at the Institution of Engineers (India)</h3>
+        <p>VermiTrack was awarded at IEI and showcased at <strong>Smart India Hackathon (SIH)</strong>,
+          the Techno Exhibition, and the <strong>Aikyam IPR Event at RVITM</strong>.</p>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><div class="num">5,700</div><div class="lbl">Worms Tracked</div></div>
+      <div class="stat"><div class="num">124.5 kg</div><div class="lbl">Compost Produced</div></div>
+      <div class="stat"><div class="num">94%</div><div class="lbl">Efficiency</div></div>
+      <div class="stat"><div class="num">5</div><div class="lbl">Motor Actuators</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">02 — Features</span>
+      <h2>What it does</h2>
+    </div>
+    <div class="features">
+      <div class="feature reveal"><span class="fi">📊</span><h3>Live Metrics Dashboard</h3><p>Real-time temperature, moisture, active beds, and worm counts streamed from sensors.</p></div>
+      <div class="feature reveal"><span class="fi">💧</span><h3>Automated Watering</h3><p>Water pump auto-triggers when moisture drops below threshold.</p></div>
+      <div class="feature reveal"><span class="fi">🚪</span><h3>Gate Control</h3><p>Open/close rack gates remotely to regulate airflow and temperature.</p></div>
+      <div class="feature reveal"><span class="fi">🤖</span><h3>AI Compost Assistant</h3><p>Chatbot ("Digital Krushi Mitra") answers farmer queries in natural language.</p></div>
+      <div class="feature reveal"><span class="fi">🪱</span><h3>Worm Management</h3><p>Track worm additions, current count, and last-added timestamps.</p></div>
+      <div class="feature reveal"><span class="fi">✅</span><h3>Harvest Readiness</h3><p>Mark compost ready when conditions are optimal.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">03 — The App</span>
+      <h2>Inside VermiTrack</h2>
+      <p>Click any screenshot to view it full-size.</p>
+    </div>
+
+    <div class="gallery">
+      <figure class="shot reveal"
+              data-img="assets/vermi-dashboard.jpeg"
+              data-caption="Dashboard — live metrics, worm count, AI assistant">
+        <img src="assets/vermi-dashboard.jpeg" alt="VermiTrack dashboard" loading="lazy" />
+        <figcaption class="shot-label"><span>Dashboard</span><strong>Live</strong></figcaption>
+      </figure>
+      <figure class="shot reveal"
+              data-img="assets/vermi-chatbot.jpeg"
+              data-caption="Digital Krushi Mitra — AI chatbot answering farmer queries">
+        <img src="assets/vermi-chatbot.jpeg" alt="AI chatbot" loading="lazy" />
+        <figcaption class="shot-label"><span>AI Assistant</span><strong>Chat</strong></figcaption>
+      </figure>
+      <figure class="shot reveal"
+              data-img="assets/vermi-control.jpeg"
+              data-caption="Rack 3 — control panel with gate, water pump, worm management">
+        <img src="assets/vermi-control.jpeg" alt="Control panel" loading="lazy" />
+        <figcaption class="shot-label"><span>Control Panel</span><strong>Actuators</strong></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEMO VIDEO ============ -->
+<section id="demo">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">04 — Demo</span>
+      <h2>See VermiTrack in action</h2>
+      <p>Watch how sensors feed live data into the app, auto-control the water pump, and trigger AI guidance.</p>
+    </div>
+
+    <div class="video-wrap reveal">
+      <div class="video-frame">
+        <!-- Replace VIDEO_ID with your YouTube video ID -->
+        <iframe
+          src="https://www.youtube.com/embed/Ec-1WMjR-hk?rel=0&modestbranding=1"
+          title="VermiTrack demo walkthrough"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <div class="video-meta">
+        <span class="dot"></span>
+        <span>2 min walkthrough · Live sensors + AI assistant demo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARCHITECTURE ============ -->
+<section id="architecture">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">05 — Architecture</span>
+      <h2>How the system fits together</h2>
+      <p>Sensors → edge controller → cloud backend → mobile app, with an AI layer on top.</p>
+    </div>
+
+    <div class="arch-wrap reveal">
+      <svg class="arch-svg" viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VermiTrack architecture">
+        <defs>
+          <linearGradient id="gSensor" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4ade80"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+          <linearGradient id="gEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7c5cff"/><stop offset="100%" stop-color="#5b3fd6"/></linearGradient>
+          <linearGradient id="gCloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#0284c7"/></linearGradient>
+          <linearGradient id="gApp" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00ffb2"/><stop offset="100%" stop-color="#10b981"/></linearGradient>
+          <linearGradient id="gAI" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4ade80" opacity="0.85"/>
+          </marker>
+        </defs>
+
+        <g opacity="0.08">
+          <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="1" fill="#ffffff"/>
+          </pattern>
+          <rect width="1000" height="620" fill="url(#dots)"/>
+        </g>
+
+        <!-- Layer 1: Sensors -->
+        <text x="500" y="40" text-anchor="middle" class="layer-label">01 · Sensors &amp; Actuators</text>
+        <rect x="60" y="60" width="180" height="90" rx="14" fill="rgba(74,222,128,0.08)" stroke="url(#gSensor)" stroke-width="1.5"/>
+        <text x="150" y="95" text-anchor="middle" class="box-title">🌡️ Temp Sensor</text>
+        <text x="150" y="120" text-anchor="middle" class="box-sub">DHT22 / DS18B20</text>
+        <rect x="270" y="60" width="180" height="90" rx="14" fill="rgba(74,222,128,0.08)" stroke="url(#gSensor)" stroke-width="1.5"/>
+        <text x="360" y="95" text-anchor="middle" class="box-title">💧 Moisture</text>
+        <text x="360" y="120" text-anchor="middle" class="box-sub">Capacitive probe</text>
+        <rect x="480" y="60" width="220" height="90" rx="14" fill="rgba(74,222,128,0.08)" stroke="url(#gSensor)" stroke-width="1.5"/>
+        <text x="590" y="95" text-anchor="middle" class="box-title">⚙️ Motor Actuators</text>
+        <text x="590" y="120" text-anchor="middle" class="box-sub">5 × water pump + gate</text>
+        <rect x="730" y="60" width="200" height="90" rx="14" fill="rgba(74,222,128,0.08)" stroke="url(#gSensor)" stroke-width="1.5"/>
+        <text x="830" y="95" text-anchor="middle" class="box-title">🪱 Worm Counter</text>
+        <text x="830" y="120" text-anchor="middle" class="box-sub">Manual / weight</text>
+
+        <g stroke="#4ade80" stroke-width="1.5" fill="none" opacity="0.7" marker-end="url(#arrow)">
+          <path d="M 150 150 L 150 210 L 500 210 L 500 250"/>
+          <path d="M 360 150 L 360 210 L 500 210"/>
+          <path d="M 590 150 L 590 210 L 500 210"/>
+          <path d="M 830 150 L 830 210 L 500 210 L 500 250"/>
+        </g>
+
+        <!-- Layer 2: Edge -->
+        <text x="500" y="245" text-anchor="middle" class="layer-label">02 · Edge Controller</text>
+        <rect x="360" y="260" width="280" height="90" rx="16" fill="rgba(124,92,255,0.10)" stroke="url(#gEdge)" stroke-width="1.8"/>
+        <text x="500" y="295" text-anchor="middle" class="box-title">🔌 ESP32 / Raspberry Pi</text>
+        <text x="500" y="320" text-anchor="middle" class="box-sub">Sensor polling · Motor driver · WiFi</text>
+        <path d="M 500 350 L 500 400" stroke="#7c5cff" stroke-width="1.8" fill="none" opacity="0.7" marker-end="url(#arrow)"/>
+
+        <!-- Layer 3: Cloud -->
+        <text x="500" y="395" text-anchor="middle" class="layer-label">03 · Cloud Backend</text>
+        <rect x="120" y="410" width="240" height="100" rx="16" fill="rgba(56,189,248,0.10)" stroke="url(#gCloud)" stroke-width="1.6"/>
+        <text x="240" y="445" text-anchor="middle" class="box-title">🌐 Node.js + Express</text>
+        <text x="240" y="470" text-anchor="middle" class="box-sub">REST API · Auth · WebSocket</text>
+        <text x="240" y="492" text-anchor="middle" class="box-sub mono">/api/metrics · /api/control</text>
+
+        <rect x="380" y="410" width="240" height="100" rx="16" fill="rgba(56,189,248,0.10)" stroke="url(#gCloud)" stroke-width="1.6"/>
+        <text x="500" y="445" text-anchor="middle" class="box-title">🗄️ MongoDB Atlas</text>
+        <text x="500" y="470" text-anchor="middle" class="box-sub">Time-series metrics</text>
+        <text x="500" y="492" text-anchor="middle" class="box-sub mono">users · racks · readings</text>
+
+        <rect x="640" y="410" width="240" height="100" rx="16" fill="rgba(251,191,36,0.10)" stroke="url(#gAI)" stroke-width="1.6"/>
+        <text x="760" y="445" text-anchor="middle" class="box-title">🤖 AI Assistant</text>
+        <text x="760" y="470" text-anchor="middle" class="box-sub">"Digital Krushi Mitra"</text>
+        <text x="760" y="492" text-anchor="middle" class="box-sub mono">NLP · guidance</text>
+
+        <path d="M 360 460 L 380 460" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.6"/>
+        <path d="M 620 460 L 640 460" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.6"/>
+        <path d="M 500 510 L 500 545" stroke="#38bdf8" stroke-width="1.8" fill="none" opacity="0.7" marker-end="url(#arrow)"/>
+
+        <!-- Layer 4: App -->
+        <text x="500" y="545" text-anchor="middle" class="layer-label">04 · Mobile App</text>
+        <rect x="280" y="560" width="440" height="60" rx="16" fill="rgba(0,255,178,0.10)" stroke="url(#gApp)" stroke-width="1.8"/>
+        <text x="500" y="590" text-anchor="middle" class="box-title">📱 Flutter App — iOS &amp; Android</text>
+        <text x="500" y="610" text-anchor="middle" class="box-sub">Dashboard · Control · AI Chat · Status</text>
+      </svg>
+
+      <div class="arch-legend">
+        <div class="legend-item"><span class="sw" style="background:#4ade80"></span>Hardware</div>
+        <div class="legend-item"><span class="sw" style="background:#7c5cff"></span>Edge</div>
+        <div class="legend-item"><span class="sw" style="background:#38bdf8"></span>Cloud</div>
+        <div class="legend-item"><span class="sw" style="background:#fbbf24"></span>AI</div>
+        <div class="legend-item"><span class="sw" style="background:#00ffb2"></span>Client</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">06 — Team</span>
+      <h2>Built with a team</h2>
+      <p>From prototyping in the lab to field deployments — a collaborative effort across hardware, firmware, and app development.</p>
+    </div>
+    <div class="video-wrap reveal">
+      <div class="video-frame">
+        <img src="assets/vermi-team.jpeg" alt="VermiTrack team at the compost setup"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECH STACK ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">07 — Tech Stack</span>
+      <h2>What it's built with</h2>
+    </div>
+    <div class="stack reveal">
+      <span>Flutter</span><span>Node.js</span><span>Express.js</span>
+      <span>MongoDB Atlas</span><span>IoT Sensors</span><span>Motor Actuators</span>
+      <span>AI Chatbot</span><span>Python</span><span>REST APIs</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REPO CARD ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">08 — Source Code</span>
+      <h2>Explore the repository</h2>
+    </div>
+    <a class="repo-card reveal" href="https://github.com/Tejas-0012/VermiTrack" target="_blank" rel="noopener">
+      <div class="repo-icon">🌱</div>
+      <div class="repo-info">
+        <div class="repo-name">Tejas-0012 / VermiTrack <span class="badge-pub">Public</span></div>
+        <div class="repo-desc">IoT + Flutter + Node — full vermicomposting control system</div>
+      </div>
+      <div class="repo-arrow">→</div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section>
+  <div class="container">
+    <div class="cta-box reveal">
+      <h3>Want the full breakdown?</h3>
+      <p>Explore more projects or grab my resume.</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="index.html#projects">← All projects</a>
+        <a class="btn btn-ghost" href="Tejas_L_Resume.pdf" download>📄 Download Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Tejas L · VermiTrack Case Study
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<dialog class="lightbox" id="lightbox">
+  <div class="lb-inner">
+    <button class="lb-close" id="lb-close" aria-label="Close">✕</button>
+    <div class="lb-stage">
+      <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous">‹</button>
+      <img class="lb-img" id="lb-img" src="" alt="" />
+      <button class="lb-nav lb-next" id="lb-next" aria-label="Next">›</button>
+    </div>
+    <div class="lb-caption" id="lb-caption"></div>
+    <div class="lb-counter" id="lb-counter"></div>
+  </div>
+</dialog>
+
+<button class="to-top" aria-label="Scroll to top">↑</button>
+
+<script src="shared.js" defer></script>
+</body>
+</html>

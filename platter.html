@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0a0a0f" />
+
+<title>Platter — AI Voice Food Delivery App | Tejas L</title>
+<meta name="description" content="Voice-first food delivery app with mood-based AI recommendations, weather-aware ranking, and live tracking." />
+
+<meta property="og:title" content="Platter — AI Voice Food Delivery App" />
+<meta property="og:description" content="Voice-first ordering, mood-based AI, live tracking. Built with Flutter + Node.js." />
+<meta property="og:image" content="https://tejas-portfolio.vercel.app/assets/platter-home.png" />
+<meta property="og:url" content="https://tejas-portfolio.vercel.app/platter.html" />
+<meta property="og:type" content="article" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Platter — AI Voice Food Delivery App" />
+<meta name="twitter:description" content="Voice-first ordering, mood-based AI, live tracking." />
+<meta name="twitter:image" content="https://tejas-portfolio.vercel.app/assets/platter-home.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css" />
+</head>
+<body class="theme-platter">
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="container">
+    <a class="nav-back" href="index.html">← Back to portfolio</a>
+    <div class="nav-logo">Plat<span>ter</span></div>
+  </div>
+</nav>
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme (press T)">
+  <span class="theme-icon-dark">🌙</span>
+  <span class="theme-icon-light" style="display:none">☀️</span>
+</button>
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <div style="text-align:center;max-width:800px;margin-inline:auto">
+      <div class="hero-badge" style="margin-inline:auto">🎙️ Voice-first · AI-powered</div>
+      <h1 class="hero-title" style="margin-bottom:1rem">
+        Platter<br><span class="grad">Food for all — order with your voice</span>
+      </h1>
+      <p style="max-width:680px;margin-inline:auto">
+        An AI-powered food delivery app that recommends dishes based on how you feel,
+        reads the weather in your area, and lets you order hands-free using voice commands.
+      </p>
+      <div class="chip-row" style="justify-content:center;margin-top:1rem">
+        <span class="chip">🎙️ Voice Search</span>
+        <span class="chip">🌤️ Weather-aware</span>
+        <span class="chip">😊 Mood-based AI</span>
+        <span class="chip">🎮 Rewards</span>
+        <span class="chip">📍 Live Tracking</span>
+      </div>
+      <div class="cta-group" style="justify-content:center">
+        <a class="btn btn-primary" href="https://github.com/Tejas-0012/Platter" target="_blank" rel="noopener">💻 View on GitHub</a>
+        <a class="btn btn-ghost" href="#demo">▶ Watch Demo</a>
+      </div>
+    </div>
+
+    <div class="showcase reveal">
+      <div class="phone"><img src="assets/platter-voice.png" alt="Voice overlay" /></div>
+      <div class="phone"><img src="assets/platter-home.png" alt="Home" /></div>
+      <div class="phone"><img src="assets/platter-delivery.png" alt="Tracking" /></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ OVERVIEW ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">01 — Overview</span>
+      <h2>Why Platter feels different</h2>
+    </div>
+    <p class="reveal">
+      Most food apps make you scroll through endless menus. Platter flips it: you tell it how
+      you feel, it reads the weather, and it serves a short curated list of dishes that actually
+      fit your mood.
+    </p>
+    <p class="reveal">
+      And when you don't want to type — just tap the mic and say
+      <strong>"Hello, show me happy food"</strong> or <strong>"Hello, go to cart"</strong>.
+      The app listens, understands, and acts.
+    </p>
+
+    <div class="highlight reveal">
+      <div class="icon">🎙️</div>
+      <div>
+        <h3>Voice is the primary interface</h3>
+        <p>Voice commands use a wake phrase <strong>"Hello"</strong> followed by the intent.
+          Quick-chip suggestions make discovery frictionless for first-time users.</p>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><div class="num">6</div><div class="lbl">Mood Modes</div></div>
+      <div class="stat"><div class="num">5+</div><div class="lbl">Mini Games</div></div>
+      <div class="stat"><div class="num">3</div><div class="lbl">Order Stages</div></div>
+      <div class="stat"><div class="num">100%</div><div class="lbl">Hands-free</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">02 — Features</span>
+      <h2>What's inside</h2>
+    </div>
+    <div class="features">
+      <div class="feature reveal"><span class="fi">🎙️</span><h3>Voice Search &amp; Commands</h3><p>Wake-word triggered listening overlay with quick-chip suggestions.</p></div>
+      <div class="feature reveal"><span class="fi">😊</span><h3>Mood-Based Recommendations</h3><p>Six mood cards — Comfort Food, Health Kick, Celebrating, Date Night, Lazy Day, Quick Bite.</p></div>
+      <div class="feature reveal"><span class="fi">🌤️</span><h3>Weather-Aware Ordering</h3><p>Reads your local weather and adjusts dish suggestions accordingly.</p></div>
+      <div class="feature reveal"><span class="fi">🍽️</span><h3>Restaurant Menus &amp; Cart</h3><p>Category filters, live cart, dynamic totals.</p></div>
+      <div class="feature reveal"><span class="fi">📍</span><h3>Live Delivery Tracking</h3><p>Map with delivery partner, order ID, progress bar, ETA.</p></div>
+      <div class="feature reveal"><span class="fi">🎮</span><h3>Platter Games &amp; Rewards</h3><p>Food Trivia, Spin &amp; Save, Food Match, Guess Dish, Food Quiz.</p></div>
+    </div>
+
+    <div class="reveal" style="margin-top:var(--gap-lg)">
+      <h3 style="margin-bottom:.5rem">The six mood modes</h3>
+      <p style="font-size:var(--fs-sm)">Every mode is weather-aware.</p>
+      <div class="moods">
+        <div class="mood" style="background:#fbbf24">🍜 Comfort Food <span>Weather-aware</span></div>
+        <div class="mood" style="background:#4ade80">💪 Health Kick <span>Weather-aware</span></div>
+        <div class="mood" style="background:#c084fc;color:#fff">🎉 Celebrating <span>Weather-aware</span></div>
+        <div class="mood" style="background:#ec4899;color:#fff">💕 Date Night <span>Weather-aware</span></div>
+        <div class="mood" style="background:#38bdf8">😌 Lazy Day <span>Weather-aware</span></div>
+        <div class="mood" style="background:#22d3ee">🏃 Quick Bite <span>Weather-aware</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">03 — The App</span>
+      <h2>Key screens</h2>
+      <p>Click any screenshot to view it full-size. Swipe on mobile, arrow keys on desktop.</p>
+    </div>
+
+    <div class="gallery">
+      <figure class="shot reveal" data-img="assets/platter-home.png" data-caption="Home — mood-based recommendations with weather awareness">
+        <img src="assets/platter-home.png" alt="Home" loading="lazy" />
+        <figcaption class="shot-label"><span>Home</span><strong>Mood</strong></figcaption>
+      </figure>
+      <figure class="shot reveal" data-img="assets/platter-voice-listening.png" data-caption="Voice overlay — wake word 'Hello' with quick chips">
+        <img src="assets/platter-voice.png" alt="Voice" loading="lazy" />
+        <figcaption class="shot-label"><span>Voice</span><strong>Listening</strong></figcaption>
+      </figure>
+      <figure class="shot reveal" data-img="assets/platter-menu.png" data-caption="Restaurant menu — MTR with category filters">
+        <img src="assets/platter-menu.png" alt="Menu" loading="lazy" />
+        <figcaption class="shot-label"><span>Menu</span><strong>MTR</strong></figcaption>
+      </figure>
+      <figure class="shot reveal" data-img="assets/platter-cart.png" data-caption="Cart — live quantity controls and dynamic totals">
+        <img src="assets/platter-cart.png" alt="Cart" loading="lazy" />
+        <figcaption class="shot-label"><span>Cart</span><strong>₹480</strong></figcaption>
+      </figure>
+      <figure class="shot reveal" data-img="assets/platter-tracking.png" data-caption="Live tracking — partner, progress bar, ETA">
+        <img src="assets/platter-delivery.png" alt="Tracking" loading="lazy" />
+        <figcaption class="shot-label"><span>Tracking</span><strong>61%</strong></figcaption>
+      </figure>
+      <figure class="shot reveal" data-img="assets/platter-games.png" data-caption="Platter Games — 5 mini-games with rewards">
+        <img src="assets/platter-game.png" alt="Games" loading="lazy" />
+        <figcaption class="shot-label"><span>Games</span><strong>Rewards</strong></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEMO VIDEO ============ -->
+<section id="demo">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">04 — Demo</span>
+      <h2>See Platter in action</h2>
+      <p>Wake word → voice order → mood-aware suggestions → cart → live tracking.</p>
+    </div>
+
+    <div class="video-wrap reveal">
+      <div class="video-frame">
+        <!-- Replace VIDEO_ID with your YouTube video ID -->
+        <iframe
+          src="https://www.youtube.com/embed/es6etisqvGM?rel=0&modestbranding=1"
+          title="Platter demo walkthrough"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <div class="video-meta">
+        <span class="dot"></span>
+        <span>2 min walkthrough · Voice order + live tracking</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARCHITECTURE ============ -->
+<section id="architecture">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">05 — Architecture</span>
+      <h2>How Platter works</h2>
+      <p>Voice → NLP → weather + mood fusion → curated recommendations → cart → backend → delivery.</p>
+    </div>
+
+    <div class="arch-wrap reveal">
+      <svg class="arch-svg" viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Platter architecture">
+        <defs>
+          <linearGradient id="pVoice" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#0891b2"/></linearGradient>
+          <linearGradient id="pNLP" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c084fc"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient>
+          <linearGradient id="pCtx" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+          <linearGradient id="pRec" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff6b35"/><stop offset="100%" stop-color="#e11d48"/></linearGradient>
+          <linearGradient id="pCloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#0284c7"/></linearGradient>
+          <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff6b35" opacity="0.85"/>
+          </marker>
+        </defs>
+
+        <g opacity="0.08">
+          <pattern id="dots2" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="1" fill="#ffffff"/>
+          </pattern>
+          <rect width="1000" height="640" fill="url(#dots2)"/>
+        </g>
+
+        <!-- Layer 1 -->
+        <text x="500" y="30" text-anchor="middle" class="layer-label">01 · User Input</text>
+        <rect x="60" y="50" width="200" height="90" rx="14" fill="rgba(34,211,238,0.08)" stroke="url(#pVoice)" stroke-width="1.5"/>
+        <text x="160" y="85" text-anchor="middle" class="box-title">🎙️ Voice Input</text>
+        <text x="160" y="108" text-anchor="middle" class="box-sub">Mic + wake-word</text>
+        <text x="160" y="126" text-anchor="middle" class="box-sub mono">"Hello ..."</text>
+
+        <rect x="290" y="50" width="200" height="90" rx="14" fill="rgba(34,211,238,0.08)" stroke="url(#pVoice)" stroke-width="1.5"/>
+        <text x="390" y="85" text-anchor="middle" class="box-title">😊 Mood Selection</text>
+        <text x="390" y="108" text-anchor="middle" class="box-sub">6 mood cards</text>
+        <text x="390" y="126" text-anchor="middle" class="box-sub mono">comfort · health · …</text>
+
+        <rect x="520" y="50" width="200" height="90" rx="14" fill="rgba(34,211,238,0.08)" stroke="url(#pVoice)" stroke-width="1.5"/>
+        <text x="620" y="85" text-anchor="middle" class="box-title">🔎 Manual Search</text>
+        <text x="620" y="108" text-anchor="middle" class="box-sub">Typed queries</text>
+        <text x="620" y="126" text-anchor="middle" class="box-sub mono">"masala dosa"</text>
+
+        <rect x="750" y="50" width="200" height="90" rx="14" fill="rgba(34,211,238,0.08)" stroke="url(#pVoice)" stroke-width="1.5"/>
+        <text x="850" y="85" text-anchor="middle" class="box-title">🌤️ Location + Weather</text>
+        <text x="850" y="108" text-anchor="middle" class="box-sub">Bengaluru North</text>
+        <text x="850" y="126" text-anchor="middle" class="box-sub mono">23.14°C · Nice</text>
+
+        <g stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.7" marker-end="url(#arrow2)">
+          <path d="M 160 140 L 160 190 L 500 190 L 500 230"/>
+          <path d="M 390 140 L 390 190 L 500 190"/>
+          <path d="M 620 140 L 620 190 L 500 190"/>
+          <path d="M 850 140 L 850 190 L 500 190"/>
+        </g>
+
+        <!-- Layer 2 -->
+        <text x="500" y="225" text-anchor="middle" class="layer-label">02 · NLP &amp; Context Fusion</text>
+        <rect x="120" y="240" width="340" height="90" rx="16" fill="rgba(192,132,252,0.10)" stroke="url(#pNLP)" stroke-width="1.8"/>
+        <text x="290" y="275" text-anchor="middle" class="box-title">🧠 Intent Parser (NLP)</text>
+        <text x="290" y="298" text-anchor="middle" class="box-sub">Speech-to-text · keyword · intent</text>
+        <text x="290" y="316" text-anchor="middle" class="box-sub mono">cart · games · food · navigate</text>
+
+        <rect x="500" y="240" width="340" height="90" rx="16" fill="rgba(251,191,36,0.10)" stroke="url(#pCtx)" stroke-width="1.8"/>
+        <text x="670" y="275" text-anchor="middle" class="box-title">🌡️ Context Engine</text>
+        <text x="670" y="298" text-anchor="middle" class="box-sub">Weather + mood + time</text>
+        <text x="670" y="316" text-anchor="middle" class="box-sub mono">fuses into ranking signal</text>
+
+        <path d="M 460 285 L 500 285" stroke="#c084fc" stroke-width="1.6" marker-end="url(#arrow2)" opacity="0.7"/>
+        <path d="M 500 330 L 500 370" stroke="#fbbf24" stroke-width="1.8" fill="none" opacity="0.8" marker-end="url(#arrow2)"/>
+
+        <!-- Layer 3 -->
+        <text x="500" y="368" text-anchor="middle" class="layer-label">03 · Recommendation Engine</text>
+        <rect x="220" y="385" width="560" height="90" rx="16" fill="rgba(255,107,53,0.10)" stroke="url(#pRec)" stroke-width="1.8"/>
+        <text x="500" y="420" text-anchor="middle" class="box-title">🍽️ Curated Dish Ranking</text>
+        <text x="500" y="443" text-anchor="middle" class="box-sub">Filters by category · price · restaurant · mood</text>
+        <text x="500" y="461" text-anchor="middle" class="box-sub mono">"Recommended for your mood"</text>
+
+        <!-- Layer 4 -->
+        <text x="500" y="505" text-anchor="middle" class="layer-label">04 · Backend &amp; Data</text>
+        <rect x="60" y="520" width="240" height="95" rx="14" fill="rgba(56,189,248,0.10)" stroke="url(#pCloud)" stroke-width="1.6"/>
+        <text x="180" y="555" text-anchor="middle" class="box-title">🌐 Node.js + Express</text>
+        <text x="180" y="578" text-anchor="middle" class="box-sub">REST API · Auth</text>
+        <text x="180" y="596" text-anchor="middle" class="box-sub mono">/menu · /cart · /order</text>
+
+        <rect x="320" y="520" width="240" height="95" rx="14" fill="rgba(56,189,248,0.10)" stroke="url(#pCloud)" stroke-width="1.6"/>
+        <text x="440" y="555" text-anchor="middle" class="box-title">🗄️ MongoDB Atlas</text>
+        <text x="440" y="578" text-anchor="middle" class="box-sub">Users · restaurants · orders</text>
+        <text x="440" y="596" text-anchor="middle" class="box-sub mono">real-time cart state</text>
+
+        <rect x="580" y="520" width="360" height="95" rx="14" fill="rgba(56,189,248,0.10)" stroke="url(#pCloud)" stroke-width="1.6"/>
+        <text x="760" y="555" text-anchor="middle" class="box-title">☁️ Vercel + Render Deployment</text>
+        <text x="760" y="578" text-anchor="middle" class="box-sub">Frontend on Vercel · API on Render</text>
+        <text x="760" y="596" text-anchor="middle" class="box-sub mono">CDN · HTTPS · env secrets</text>
+      </svg>
+
+      <div class="arch-legend">
+        <div class="legend-item"><span class="sw" style="background:#22d3ee"></span>Input</div>
+        <div class="legend-item"><span class="sw" style="background:#c084fc"></span>NLP</div>
+        <div class="legend-item"><span class="sw" style="background:#fbbf24"></span>Context</div>
+        <div class="legend-item"><span class="sw" style="background:#ff6b35"></span>Recommender</div>
+        <div class="legend-item"><span class="sw" style="background:#38bdf8"></span>Backend</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECH STACK ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">06 — Tech Stack</span>
+      <h2>What it's built with</h2>
+    </div>
+    <div class="stack reveal">
+      <span>Flutter</span><span>Node.js</span><span>Express.js</span>
+      <span>MongoDB Atlas</span><span>Voice / STT API</span><span>Weather API</span>
+      <span>REST APIs</span><span>Vercel</span><span>Render</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REPO CARD ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">07 — Source Code</span>
+      <h2>Explore the repository</h2>
+    </div>
+    <a class="repo-card reveal" href="https://github.com/Tejas-0012/Platter" target="_blank" rel="noopener">
+      <div class="repo-icon">🍔</div>
+      <div class="repo-info">
+        <div class="repo-name">Tejas-0012 / Platter <span class="badge-pub">Public</span></div>
+        <div class="repo-desc">Voice-first AI food recommendation app</div>
+      </div>
+      <div class="repo-arrow">→</div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section>
+  <div class="container">
+    <div class="cta-box reveal">
+      <h3>Want to try the demo?</h3>
+      <p>Reach out for a live walkthrough or explore more projects.</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="index.html#projects">← All projects</a>
+        <a class="btn btn-ghost" href="Tejas_L_Resume.pdf" download>📄 Download Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Tejas L · Platter Case Study
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<dialog class="lightbox" id="lightbox">
+  <div class="lb-inner">
+    <button class="lb-close" id="lb-close" aria-label="Close">✕</button>
+    <div class="lb-stage">
+      <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous">‹</button>
+      <img class="lb-img" id="lb-img" src="" alt="" />
+      <button class="lb-nav lb-next" id="lb-next" aria-label="Next">›</button>
+    </div>
+    <div class="lb-caption" id="lb-caption"></div>
+    <div class="lb-counter" id="lb-counter"></div>
+  </div>
+</dialog>
+
+<button class="to-top" aria-label="Scroll to top">↑</button>
+
+<script src="shared.js" defer></script>
+</body>
+</html>

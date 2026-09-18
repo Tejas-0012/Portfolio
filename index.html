@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0a0a0f" />
+
+<title>Tejas L — Full-Stack & AI Developer</title>
+<meta name="description" content="Tejas L — Computer Science student building full-stack apps with Flutter, Node.js, MongoDB. AI + IoT projects. Open to internships." />
+
+<meta property="og:title" content="Tejas L — Full-Stack & AI Developer" />
+<meta property="og:description" content="Building apps with Flutter, Node.js, MongoDB. AI + IoT projects." />
+<meta property="og:image" content="https://tejas-portfolio.vercel.app/assets/og-cover.jpg" />
+<meta property="og:url" content="https://tejas-portfolio.vercel.app/" />
+<meta property="og:type" content="website" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Tejas L — Full-Stack & AI Developer" />
+<meta name="twitter:description" content="Building apps with Flutter, Node.js, MongoDB." />
+<meta name="twitter:image" content="https://tejas-portfolio.vercel.app/assets/og-cover.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav-logo">Tejas<span>.L</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="nav-drawer" role="dialog" aria-modal="true">
+  <button class="close" aria-label="Close menu">✕</button>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</div>
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme (press T)">
+  <span class="theme-icon-dark">🌙</span>
+  <span class="theme-icon-light" style="display:none">☀️</span>
+</button>
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-badge">Available for opportunities</div>
+      <h1 class="hero-title">Hi, I'm <span class="grad">Tejas L</span><br>Full-Stack &amp; AI Developer</h1>
+      <div class="role-rotator" id="rotator"
+           data-roles='["Full-Stack Developer","AI &amp; IoT Enthusiast","Flutter App Builder","Cybersecurity Explorer"]'></div>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="#projects">View Projects →</a>
+        <a class="btn btn-ghost" href="Tejas_L_Resume.pdf" download>📄 Resume</a>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo-glow"></div>
+      <img class="photo" src="assets/passportsize.jpeg" alt="Tejas L" />
+    </div>
+  </div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">01 — About</span>
+      <h2>Building useful things with code.</h2>
+    </div>
+    <p class="reveal" style="max-width:720px">
+      Motivated and detail-oriented Computer Science Engineering student with strong skills in
+      full-stack web development, Python, and AI-based applications. Experienced in building
+      responsive applications using Flutter, Node.js, Express.js, and MongoDB Atlas. Passionate
+      about software development, cybersecurity, cloud technologies, and problem-solving
+      through innovative solutions.
+    </p>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">02 — Skills</span>
+      <h2>Tools I work with</h2>
+    </div>
+    <div class="bento">
+      <div class="card reveal">
+        <h3>💻 Languages</h3>
+        <div class="chip-row">
+          <span class="chip">C</span><span class="chip">Java</span><span class="chip">Python</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h3>🌐 Web &amp; App</h3>
+        <div class="chip-row">
+          <span class="chip">React</span><span class="chip">HTML</span><span class="chip">CSS</span>
+          <span class="chip">JavaScript</span><span class="chip">Flutter</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h3>🗄️ Backend &amp; DB</h3>
+        <div class="chip-row">
+          <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">MongoDB Atlas</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h3>🛠️ Tools</h3>
+        <div class="chip-row">
+          <span class="chip">GitHub</span><span class="chip">VS Code</span>
+          <span class="chip">Vercel</span><span class="chip">Render</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h3>🧠 Core Concepts</h3>
+        <div class="chip-row">
+          <span class="chip">DSA</span><span class="chip">Problem Solving</span>
+          <span class="chip">Cloud</span><span class="chip">Networking</span><span class="chip">ML Basics</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h3>🤝 Soft Skills</h3>
+        <div class="chip-row">
+          <span class="chip">Teamwork</span><span class="chip">Adaptability</span><span class="chip">Analytical</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">03 — Projects</span>
+      <h2>Selected work</h2>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project reveal">
+        <h3>🍔 Platter — AI Voice Food Delivery App</h3>
+        <p>Voice-first food ordering with mood-based AI recommendations, live tracking, and rewards games.</p>
+        <ul>
+          <li>6 mood modes · wake-word voice commands</li>
+          <li>Weather-aware dish ranking</li>
+          <li>Deployed on Vercel &amp; Render</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">Flutter</span><span class="chip">Node.js</span>
+          <span class="chip">MongoDB</span><span class="chip">Voice AI</span>
+        </div>
+        <div class="chip-row" style="margin-top:1rem">
+          <a href="platter.html" class="chip">📄 Case Study</a>
+          <a href="https://github.com/Tejas-0012/Platter" target="_blank" rel="noopener" class="chip">💻 Code</a>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <h3>🌱 VermiTrack — Smart Vermicompost System</h3>
+        <p>Full-stack IoT system for real-time vermicompost monitoring via mobile app.</p>
+        <ul>
+          <li>Controls 5 motor actuators + AI chatbot</li>
+          <li>🏆 Awarded at Institution of Engineers (India)</li>
+          <li>Shown at SIH · Techno Exhibition · Aikyam IPR @ RVITM</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">IoT</span><span class="chip">Flutter</span><span class="chip">AI Chatbot</span>
+        </div>
+        <div class="chip-row" style="margin-top:1rem">
+          <a href="vermitrack.html" class="chip">📄 Case Study</a>
+          <a href="https://github.com/Tejas-0012/VermiTrack" target="_blank" rel="noopener" class="chip">💻 Code</a>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <span class="status-pill">Ongoing</span>
+        <h3>☁️ Hybrid Collaborative Cloud-Based IDS</h3>
+        <p>Intrusion detection system monitoring network traffic in real time.</p>
+        <ul>
+          <li>ML-based anomaly detection</li>
+          <li>Cloud collaborative threat monitoring</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">Python</span><span class="chip">ML</span><span class="chip">Networking</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">04 — Experience</span>
+      <h2>Where I've worked</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <h4>Full Stack Development Intern</h4>
+        <div class="meta">Intrinfort</div>
+        <p>Developed responsive web pages using HTML, CSS, and JavaScript. Improved frontend structure and overall user experience.</p>
+      </div>
+      <div class="tl-item reveal">
+        <h4>Web Development Intern</h4>
+        <div class="meta">Plasmid</div>
+        <p>Worked on real-time web applications and UI enhancements. Assisted in frontend improvements and debugging.</p>
+      </div>
+      <div class="tl-item reveal">
+        <h4>B.E. Computer Science Engineering</h4>
+        <div class="meta">Dr. Ambedkar Institute of Technology · CGPA 8.0</div>
+        <p>Core coursework in DSA, Networking, ML, and Cloud.</p>
+      </div>
+      <div class="tl-item reveal">
+        <h4>VermiTrack — Recognized at Institution of Engineers (India)</h4>
+        <div class="meta">Award · SIH · Techno Exhibition · Aikyam IPR @ RVITM</div>
+        <p>Full-stack IoT vermicomposting system with live sensors, 5 motor actuators, and an AI chatbot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="container">
+    <div class="cta-box reveal">
+      <span class="kicker">05 — Contact</span>
+      <h3>Let's build something.</h3>
+      <p>Open to internships, freelance work, and collaborations in full-stack, AI, or IoT.</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="https://github.com/Tejas-0012" target="_blank" rel="noopener">💻 GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/tejas-l-214a2a400/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        <a class="btn btn-ghost" href="Tejas_L_Resume.pdf" download>📄 Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    © <span id="year"></span> Tejas L · Built with HTML, CSS &amp; JS
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Scroll to top">↑</button>
+
+<script src="shared.js" defer></script>
+</body>
+</html>
