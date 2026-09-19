@@ -614,6 +614,81 @@ a.chip:hover{
   text-transform:uppercase;
   letter-spacing:.05em;
 }
+/* ============ PROJECT THUMBNAILS ============ */
+.project-thumb{
+  position:relative;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  background:var(--surface-2);
+  aspect-ratio:16/10;
+  cursor:zoom-in;
+  transition:transform .4s var(--ease),border-color .3s;
+}
+.project-thumb:hover{
+  transform:scale(1.02);
+  border-color:var(--border-2);
+}
+.project-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:top center;
+  display:block;
+  transition:transform .6s var(--ease);
+}
+.project-thumb:hover img{transform:scale(1.06)}
+
+/* Zoom icon badge */
+.project-thumb::after{
+  content:'⤢';
+  position:absolute;
+  top:.6rem;
+  right:.6rem;
+  width:28px;
+  height:28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:8px;
+  background:rgba(10,10,15,.7);
+  backdrop-filter:blur(8px);
+  border:1px solid var(--border);
+  color:#fff;
+  font-size:.75rem;
+  opacity:0;
+  transform:translateY(-4px);
+  transition:opacity .3s,transform .3s;
+  pointer-events:none;
+  z-index:2;
+}
+.project-thumb:hover::after{opacity:1;transform:translateY(0)}
+
+/* Small badge overlay (e.g. "Awarded") */
+.thumb-badge{
+  position:absolute;
+  top:.6rem;
+  left:.6rem;
+  z-index:2;
+  font-family:'JetBrains Mono',monospace;
+  font-size:.68rem;
+  padding:.25rem .6rem;
+  border-radius:999px;
+  background:rgba(10,10,15,.75);
+  backdrop-filter:blur(8px);
+  border:1px solid var(--border);
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+/* Stack for multiple thumbs in one card */
+.thumb-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:.6rem;
+}
+.thumb-row .project-thumb{aspect-ratio:1/1}
 
 /* ---------- 12. TIMELINE ---------- */
 .timeline{

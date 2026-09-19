@@ -152,7 +152,7 @@
 (function(){
   if(!window.matchMedia('(hover: hover)').matches) return;
 
-  const cards = document.querySelectorAll('.card, .project, .feature');
+  const cards = document.querySelectorAll('.card, .project, .feature, .project-thumb');
   cards.forEach(card => {
     card.addEventListener('mousemove', e => {
       const r = card.getBoundingClientRect();
